@@ -7,7 +7,8 @@ describe('the express app', () => {
     request(app)
       .get('/api')
       .end((err, response) => {
-        console.log(response);
+        assert(response.body.hello === 'neptune');
+        done();
       });
   });
 });
