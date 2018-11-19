@@ -4,7 +4,7 @@ const app = require('../app');
 
 describe('the express app', () => {
   it('handles a GET request to /api', done => {
-    request(api)
+    request(app)
       .get('/api')
       .end((err, response) => {
         console.log(response);
