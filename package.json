@@ -4,7 +4,7 @@
   "description": "Basic API using the Node.js environment, the Express.js framework and MongoDB (NoSQL) database with the Mongoose ODM to make the schemas. And Mocha for testing.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon --exec 'mocha --recursive -R min'"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/jdm79/mongo-node-api#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mocha": "^5.2.0",
     "mongoose": "^5.3.12",
+    "nodemon": "^1.18.6",
     "supertest": "^3.3.0"
   }
 }
