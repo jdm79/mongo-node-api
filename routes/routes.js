@@ -1,5 +1,5 @@
+const PlacesController = require('../controllers/places_controller');
+
 module.exports = app => {
-  app.get('/api', (req, res) => {
-    res.send({ hello: 'neptune' })
-  });
+  app.get('/api', PlacesController.greeting);
 }
