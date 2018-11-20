@@ -14,4 +14,9 @@ $ npm run test // to run the tests!
 
 # How to use
 
-TBA
+Currently usable with Postman app (other apps are available).
+
+You can send a POST request to http://localhost:6666/api/places 
+
+* On Postman, click on 'Body', then underneath that choose 'Raw' and 'JSON' from the dropdown next to 'Raw'
+* In the input area below, you can input JSON query. E.g. { "name": "James's Bakery"}
