@@ -4,7 +4,7 @@
   "description": "Basic API using the Node.js environment, the Express.js framework and MongoDB (NoSQL) database with the Mongoose ODM to make the schemas. And Mocha for testing.",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon --exec 'mocha --recursive -R min'"
+    "test": "NODE_ENV=test nodemon --exec 'mocha --recursive -R min'"
   },
   "repository": {
     "type": "git",
