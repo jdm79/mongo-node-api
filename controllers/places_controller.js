@@ -4,7 +4,9 @@ module.exports = {
   },
 
   create(req, res) {
-    console.log(req.body);
-    res.send({ hello: 'uranus' })
+    const placeProps = req.body;
+    
+    Place.create(placeProps)
+      .then(place => res.send(place));
   }
 }
